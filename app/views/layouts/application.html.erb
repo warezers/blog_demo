@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Maninking developer blog</title>
+
 	   <link href="https://fonts.googleapis.com/css?family=Raleway:500,700" rel="stylesheet">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,7 +12,7 @@
 
   <body>
     <header id="main_navigation" class="clearfix">
-			<a href="#" class="name">Mani develop</a>
+      <%= link_to "Mani develop", root_path, class:"name"%>
 			<nav>
       <%= link_to "Articles", posts_path %>
 			<a href="">projects</a>
@@ -19,5 +20,14 @@
 			</nav>
 		</header>
     <%= yield %>
+
+    <footer id="main_footer">
+			<p class="copywright">&copy; 2017 Manikandan</p>
+			<nav>
+				<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+			</nav>
+		</footer>
   </body>
 </html>
