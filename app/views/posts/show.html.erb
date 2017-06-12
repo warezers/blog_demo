@@ -1,0 +1,11 @@
+<h1>all page show</h1>
+
+<%= @post.title %><br>
+<%= @post.content %>
+
+<br>
+<br>
+
+<%= link_to "Edit articles",edit_post_path(@post) %>
+<%= link_to "Delete article",post_path(@post),
+                method: :delete, data: {confirm: "Are you sure?"} %>
