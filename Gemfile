@@ -21,6 +21,8 @@ gem 'redcarpet', '~> 3.4'
 gem 'friendly_id', '~> 5.2.1'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'mail_form'
+gem 'devise', '~> 4.3'
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 
 group :development, :test do
  

@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
 	before_action :set_project, only: [:edit, :show, :destroy, :update]
+	before_action :authenticate_user!, except: [:index, :show]
 
 	def index
 		@projects=Project.all.order('created_at desc')
