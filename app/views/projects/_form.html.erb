@@ -1,0 +1,25 @@
+<%= form_for @project do |f| %>
+ <% if @project.errors.any? %>
+ 	<h2><%=pluralize(@project.errors.count, "error")%></h2>
+ 	<ul>
+ 		<% @project.errors.full_messages.each do |name,msg|%>
+ 		<li><%=msg%></li>
+ 		<% end %>
+ 	</ul>
+ <% end %>
+ 
+	 <%= f.label :title%><br>
+	 <%= f.text_field :title %>
+	 <br>
+	 
+	 <%= f.label :description %><br>
+	 <%= f.text_area :description %>
+	 <br>
+	 
+	 <%= f.label :link%><br>
+	 <%= f.text_field :link %>
+	 <br>
+	 
+	 <%= f.submit %>
+
+<% end %>

@@ -146,6 +146,17 @@ input[type="submit"],.button{
 		color: $highlight;
 	}
 }
+
+.project_button{
+	background:$highlight;
+	color: $white;
+	text-decoration: none;
+	padding: 1em 2em;
+}
+.button_wrapper{
+	text-align: center;
+	margin:4em 0 0 0;
+}
 @import 'welcome';
 @import 'posts_projects';
 @import 'pygments';
