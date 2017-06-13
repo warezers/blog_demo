@@ -12,7 +12,11 @@
 	</div>
 	<br>
 	<br>
-	<%= link_to "Edit", edit_project_path(@project) %>  
-	 <%= link_to "Delete",project_path(@project), method: :delete, date: {confirm: "Are you sure"}  %> 
+	<% if user_signed_in? %>
+		<div class="admin_links">
+			<%= link_to "Edit", edit_project_path(@project) %>  
+				<%= link_to "Delete",project_path(@project), method: :delete, date: {confirm: "Are you sure"}  %> 
+		</div>
+	<% end %>
 	<hr>
 </div>			

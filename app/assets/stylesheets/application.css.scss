@@ -48,6 +48,11 @@ hr {
     	border-top: 2px solid $highlight;
     	margin: 2rem 0;
     }
+    .notice, .alert{
+    	text-align: center;
+    	padding: 1em 0;
+    	border-bottom: 1px solid #E9E9E9;
+    }
 .wrapper{
 	width: 90%;
 	margin:0 auto;
